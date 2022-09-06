@@ -12,7 +12,7 @@ const Card = (props) => {
                 <Sector name='Gaming' icon='videogame_asset'/>
                 <Sector name='Interests' icon='interests'/>
                 <Sector name='Creative' icon='emoji_objects'/>
-                <Sector name='はい Japan'/>
+                <Sector name='Global' icon='public'/>
                 <Sector name='Misc.' icon='casino'/>
                 <Sector name='Politics' icon='gavel'/>
                 <Sector name='Other' icon='more_horiz'/>

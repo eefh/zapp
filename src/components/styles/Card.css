@@ -1,30 +1,23 @@
-.banner {
-    display: flex;
-    font-size: 24px;
-    padding:10px 0px 10px 20px;
-    font-family: 'Noto Sans', sans-serif;
-    font-style: normal;
-}
 
 .sector {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5px;
+    justify-content: center;
 }
 .card-content {
     display: flex;
+
     font-size: 18px;
-    padding: 10px 0px 10px 0px;
-    flex-wrap: wrap;
-    border: solid rgba(182, 182, 182, 0.61) 1px;
+    border: solid rgba(115, 127, 167, 0.623) 1px;
     background-color: rgba(127, 141, 175, 0.158);
-    border-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 10px 10px 10px #05223d36;
+    margin: -1px;
 }
 
- hr {
-    border: solid rgba(167, 167, 167, 0.562) 1px;
-}
+
 p {
     color : rgb(3, 4, 46);
 }
@@ -33,21 +26,50 @@ p {
     align-items: center;
     font-size: 17px;
     color: rgb(225, 235, 255);
-    text-shadow: 4px 4px 5px rgba(11, 29, 66, 0.322);
-    background-color: #65677e54;
-    padding: 1rem;
+    background-color: #575d9c54;
+    padding: 8px;
     margin: 10px;
-    border-radius: 500px;
-    border: solid rgba(161, 161, 161, 0.63) 1px;
-    box-shadow: 10px 10px 20px rgba(3, 16, 32, 0.877);
+    border-radius: 8px;
+    border: solid #00000000 1px;
+    box-shadow: 10px 10px 20px rgba(6, 26, 51, 0.137);
     user-select: none;
     cursor: pointer;
     transition: 200ms;
 }
 .content-block:hover {
     background-color: #071d3636;
-    box-shadow: 5px 5px 5px rgba(6, 19, 43, 0.712);
+    box-shadow: 5px 5px 5px rgba(6, 19, 43, 0.336);
     color: white;
+    border-bottom: solid #3add7eb0 1px;
+    border-radius: 0px;
+}
+.modal {
+    position: absolute;
+    padding: 14px;
+    border-radius: 40px;
+    transform: translate(0px, 180px);
+    animation: spawn 200ms ease;
+    font-size: 16px;
+    background-color: black;
+}
+
+@keyframes spawn {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(180px);
+    }
+}
+.modal > p {
+    color: white;
+    transition: 200ms;
+    padding: 5px;
+}
+.modal > p:hover {
+    color: rgb(0, 255, 128)
 }
 @media only screen and (max-width: 800px) {
     .card-content {

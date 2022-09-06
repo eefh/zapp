@@ -9,8 +9,7 @@ const App = () => {
         <div className="app">
             <Header darkMode='dark'/>
             <div class="cards">
-                <Card name='Sectors'darkMode='dark'/>
-                <Card name='Popular' darkMode='dark'/>
+                <Card darkMode='dark'/>
             </div>
             <Footer/>
         </div>

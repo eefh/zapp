@@ -3,17 +3,16 @@ const Header = (props) => {
 
     return (
         <div className='header'>
-            <a href="/"className='title'>
-                <h1 className={props.darkMode}>zerl<span className="material-symbols-outlined">public</span>g</h1>
-            </a>
-            <div className='options'>
-                <span className="material-symbols-rounded">
+
+                <span className="material-symbols-rounded settings">
                 settings
                 </span>
-                <span className="material-symbols-rounded">
+                            <a href="/"className='title'>
+                <h1 className={props.darkMode}>zerl<span className="material-symbols-outlined">public</span>g</h1>
+            </a>
+                <span className="material-symbols-rounded settings">
                 person
                 </span>
-            </div>
         </div>
        
     );

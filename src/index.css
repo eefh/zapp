@@ -5,8 +5,7 @@
 }
 html {
     height: auto;
-    background: rgb(0,63,103);
-    background: linear-gradient(0deg, rgba(0,63,103,1) 0%, rgba(0,7,27,1) 69%);
+    background: rgb(0, 21, 34);
 }
 body {
     display: flex;
