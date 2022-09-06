@@ -4,10 +4,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 .card-content {
     display: flex;
-
+    justify-content: center;
     font-size: 18px;
     border: solid rgba(115, 127, 167, 0.623) 1px;
     background-color: rgba(127, 141, 175, 0.158);
@@ -15,15 +16,18 @@
     border-bottom-right-radius: 16px;
     box-shadow: 10px 10px 10px #05223d36;
     margin: -1px;
+    position: relative;
+    flex-wrap: wrap;
 }
-
 
 p {
     color : rgb(3, 4, 46);
 }
 .content-block {
     display: flex;
+    position: relative;
     align-items: center;
+    justify-content: center;
     font-size: 17px;
     color: rgb(225, 235, 255);
     background-color: #575d9c54;
@@ -34,33 +38,37 @@ p {
     box-shadow: 10px 10px 20px rgba(6, 26, 51, 0.137);
     user-select: none;
     cursor: pointer;
-    transition: 200ms;
 }
 .content-block:hover {
     background-color: #071d3636;
     box-shadow: 5px 5px 5px rgba(6, 19, 43, 0.336);
     color: white;
-    border-bottom: solid #3add7eb0 1px;
-    border-radius: 0px;
 }
 .modal {
+    z-index: 99;
     position: absolute;
-    padding: 14px;
-    border-radius: 40px;
-    transform: translate(0px, 180px);
-    animation: spawn 200ms ease;
-    font-size: 16px;
-    background-color: black;
+    padding: 6px;
+    top: 40px;
+    width: fit-content;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top:solid rgb(0, 255, 128) 1px;
+    border-left: solid rgba(115, 127, 167, 0.623) 1px;
+    border-right: solid rgba(115, 127, 167, 0.623) 1px;
+    border-bottom: solid rgba(115, 127, 167, 0.623) 1px;
+    background-color: rgb(32, 50, 71);
+    font-size: 14px;
+    animation: spawn 400ms ease;
 }
 
 @keyframes spawn {
     0% {
         opacity: 0;
-        transform: translateY(0px);
+        transform: translateY(-20px);
     }
     100% {
         opacity: 1;
-        transform: translateY(180px);
+        transform: translateY(0px);
     }
 }
 .modal > p {

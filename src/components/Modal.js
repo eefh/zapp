@@ -1,11 +1,12 @@
 import React from "react";
-const links = [['gaming general', 'gaming news', 'multiplayer games', 'mobile games', 'retro games']
-            ,['comics & cartoons', 'technology', 'television & film', 'business & finance', 'weapons', 'science and math', 'outdoors', 'sports']
-            ,['photography', 'food & cooking', 'artwork/critique', 'wallpapers', 'literature', 'music', 'fashion', '3d graphics', 'graphic design', 'diy']
-            ,['africa', 'americas', 'asia', 'europe', 'japan']
-            ,['5']
-            ,['debate', 'left', 'right']
-            ,['7']];
+import ReactDom from 'react-dom';
+const links = [['gaming general', 'gaming news', 'multiplayer games', 'mobile games', 'retro games', 'rpg games']
+            ,['comics & film', 'technology', 'business & finance', 'science and math', 'outdoors', 'sports']
+            ,['food & cooking', 'artwork/critique', 'literature', 'music', 'fashion', 'graphic design']
+            ,['africa', 'north america', 'south america', 'asia', 'europe', 'japan']
+            ,['random', 'diy', 'cool', 'zerblog', 'zerlog star', 'secret']
+            ,['debate', 'left', 'right', 'twitter', 'ideologies', 'activism']
+            ,['lgbt', 'advice', 'current news', 'paranormal', 'travel', 'fitness']];
 export default function Modal(props){
     if (!props.open) return null
     let sec;
