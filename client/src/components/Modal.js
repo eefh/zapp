@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDom from 'react-dom';
-const links = [['gaming general', 'gaming news', 'multiplayer games', 'mobile games', 'retro games', 'rpg games']
-            ,['comics & film', 'technology', 'business & finance', 'science and math', 'outdoors', 'sports']
-            ,['food & cooking', 'artwork/critique', 'literature', 'music', 'fashion', 'graphic design']
-            ,['japan', 'north america', 'africa', 'south america', 'asia', 'europe']
-            ,['random', 'diy', 'cool', 'zerblog', 'zerlog star', 'secret']
+const links = [['gaming-general', 'gaming-news', 'multiplayer-games', 'mobile-games', 'retro-games', 'rpg-games']
+            ,['comics-and-film', 'technology', 'business-and-finance', 'science-and-math', 'outdoors', 'sports']
+            ,['food-and-cooking', 'artwork-critique', 'literature', 'music', 'fashion', 'graphic-design']
+            ,['japan', 'north-america', 'africa', 'south-america', 'asia', 'europe']
+            ,['random', 'diy', 'cool', 'zerblog', 'zerlog-star', 'secret']
             ,['debate', 'left', 'right', 'twitter', 'ideologies', 'activism']
-            ,['lgbt', 'advice', 'current news', 'paranormal', 'travel', 'fitness']];
+            ,['lgbt', 'advice', 'current-news', 'paranormal', 'travel', 'fitness']];
 export default function Modal(props){
     if (!props.open) return null
     let sec;
@@ -37,14 +37,11 @@ export default function Modal(props){
     }
     return (
         <div className="modal">
-            <p>{links[sec][0]}</p>
-            <p>{links[sec][1]}</p>
-            <p>{links[sec][2]}</p>
-            <p>{links[sec][3]}</p>
-            <p>{links[sec][4]}</p>
-            <p>{links[sec][5]}</p>
-            <p>{links[sec][6]}</p>
-            <p>{links[sec][7]}</p>
+            {links[sec].map(e =>
+                <div className="items">
+                <a href={e}>{e}</a>
+                </div>
+            )}
         </div>
     )
 }

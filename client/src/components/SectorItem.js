@@ -1,7 +1,7 @@
 import React from 'react';
 const SectorItem = (props) => {
     return (
-        <a>{props.item}</a>
+        <a href={props.route}>{props.item}</a>
     );
 }
 
