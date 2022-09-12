@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 const links = [['gaming general', 'gaming news', 'multiplayer games', 'mobile games', 'retro games', 'rpg games']
             ,['comics & film', 'technology', 'business & finance', 'science and math', 'outdoors', 'sports']
             ,['food & cooking', 'artwork/critique', 'literature', 'music', 'fashion', 'graphic design']
-            ,['africa', 'north america', 'south america', 'asia', 'europe', 'japan']
+            ,['japan', 'north america', 'africa', 'south america', 'asia', 'europe']
             ,['random', 'diy', 'cool', 'zerblog', 'zerlog star', 'secret']
             ,['debate', 'left', 'right', 'twitter', 'ideologies', 'activism']
             ,['lgbt', 'advice', 'current news', 'paranormal', 'travel', 'fitness']];
