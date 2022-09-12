@@ -36,7 +36,6 @@ h1 {
     font-family: 'Outfit', sans-serif;
     font-stretch: condensed;
     letter-spacing: -0.12ch;
-    margin: 10px 0px 0px 0px;
 }
 .dark {
     color: rgb(253, 249, 243);
@@ -45,8 +44,11 @@ h1 {
 .light {
     color: black;
 }
-
-.material-symbols-outlined {
+.globe {
+    top: 5px;
+    margin: 0px -6px 0px -2px;
+}
+.material-icons-outlined {
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -55,11 +57,10 @@ h1 {
     font-size: 2.9rem;
     color:white;
     position: relative;
-    top: 5px;
-    margin: 0px -6px 0px -2px;
+
   }
 
-  .material-symbols-rounded {
+  .material-icons {
     font-variation-settings:
     'FILL' 1,
     'wght' 400,
@@ -67,8 +68,6 @@ h1 {
     'opsz' 48;
     user-select: none;
     cursor: pointer;
-    font-size: 2.5rem;
-    padding: 5px;
     margin: 0px 0px -25px 0px;
   }
   .header {
@@ -85,13 +84,12 @@ h1 {
     width: 40vw;
   }
 
-  .material-symbols-rounded.settings {
+  .material-icons.settings {
     font-size: 36px;
 }
 
 .icon {
     font-size: 30px;
-    margin: -9px 2px 0px 0px;
 }
 .footer {
     color: white;
